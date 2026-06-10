@@ -31,8 +31,6 @@ export default function Home() {
     className="relative z-10 mx-auto max-w-7xl"
   >
     <div className="grid items-center gap-14 lg:grid-cols-[1.2fr_0.8fr]">
-
-      {/* LEFT SIDE */}
       <div>
         <p className="mb-6 text-sm uppercase tracking-[0.4em] text-blue-500">
           AI Engineer Portfolio
@@ -55,10 +53,9 @@ export default function Home() {
         </div>
 
         <p className="mt-10 max-w-3xl text-xl leading-relaxed text-zinc-400">
-          Computer Engineering & Informatics student focused on
-          Artificial Intelligence, Machine Learning and Large Language
-          Models, building real-world AI applications, APIs and
-          intelligent systems.
+          Computer Engineering & Informatics student focused on Artificial
+          Intelligence, Machine Learning and Large Language Models, building
+          real-world AI applications, APIs and intelligent systems.
         </p>
 
         <div className="mt-12 flex flex-wrap gap-4">
@@ -79,10 +76,11 @@ export default function Home() {
           </span>
         </div>
 
-        <div className="mt-12 flex gap-4">
+        <div className="mt-12 flex flex-wrap gap-4">
           <a
             href="https://github.com/TasosN-06"
             target="_blank"
+            rel="noopener noreferrer"
             className="rounded-xl bg-white px-6 py-3 font-medium text-black transition hover:scale-105"
           >
             GitHub
@@ -97,28 +95,21 @@ export default function Home() {
         </div>
       </div>
 
-      {/* RIGHT SIDE PHOTO */}
       <div className="flex justify-center">
         <motion.div
-          animate={{
-            y: [0, -10, 0],
-          }}
-          transition={{
-            duration: 4,
-            repeat: Infinity,
-          }}
+          animate={{ y: [0, -10, 0] }}
+          transition={{ duration: 4, repeat: Infinity }}
         >
           <Image
-  src="/profile.jpg"
-  alt="Tasos Nikolopoulos"
-  width={420}
-  height={420}
-  priority
-  className="relative z-10 h-[260px] w-[260px] rounded-full border-4 border-white/10 object-cover shadow-2xl sm:h-[320px] sm:w-[320px] lg:h-[420px] lg:w-[420px]"
-/>
+            src="/profile.jpg"
+            alt="Tasos Nikolopoulos"
+            width={420}
+            height={420}
+            priority
+            className="relative z-10 h-[260px] w-[260px] rounded-full border-4 border-white/10 object-cover object-center shadow-2xl sm:h-[320px] sm:w-[320px] lg:h-[420px] lg:w-[420px]"
+          />
         </motion.div>
       </div>
-
     </div>
   </motion.div>
 </section>
@@ -197,9 +188,25 @@ export default function Home() {
     <span>Groq</span>
   </div>
 
-  <p className="mt-6 text-sm text-blue-400">
-    View on GitHub →
-  </p>
+  <div className="mt-6 flex flex-wrap gap-3">
+  <a
+    href="https://huggingface.co/spaces/Tasos06/pdf-to-sum"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-500"
+  >
+    Live Demo →
+  </a>
+
+  <a
+    href="https://github.com/TasosN-06/pdf-to-sum"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-full border border-white/10 px-4 py-2 text-sm font-medium text-zinc-300 transition hover:border-blue-500/40"
+  >
+    View Code →
+  </a>
+</div>
 </a>
 
 {/* MINI GPT */}
