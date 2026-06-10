@@ -21,7 +21,7 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-<section className="relative flex min-h-screen items-center overflow-hidden px-12 lg:px-20">
+<section className="relative flex min-h-screen items-center overflow-hidden px-6 py-28 sm:px-10 lg:px-20">
   <div className="absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-blue-500/30 blur-[150px]" />
 
   <motion.div
@@ -38,7 +38,7 @@ export default function Home() {
           AI Engineer Portfolio
         </p>
 
-        <h1 className="bg-gradient-to-r from-white via-white to-blue-400 bg-clip-text text-transparent font-black leading-[0.9] text-6xl md:text-7xl lg:text-[6rem] xl:text-[7rem]">
+        <h1 className="bg-gradient-to-r from-white via-white to-blue-400 bg-clip-text text-transparent font-black leading-[0.9] text-5xl sm:text-6xl md:text-7xl lg:text-[6rem] xl:text-[7rem]">
           TASOS
           <br />
           NIKOLOPOULOS
@@ -114,7 +114,7 @@ export default function Home() {
   width={420}
   height={420}
   priority
-  className="relative z-10 h-[420px] w-[420px] rounded-full border-4 border-white/10 object-cover object-center shadow-2xl"
+  className="relative z-10 h-[260px] w-[260px] rounded-full border-4 border-white/10 object-cover shadow-2xl sm:h-[320px] sm:w-[320px] lg:h-[420px] lg:w-[420px]"
 />
         </motion.div>
       </div>
